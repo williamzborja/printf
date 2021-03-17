@@ -56,7 +56,7 @@ int get_function(char type, int *i, int *count, va_list lista)
 ```
 This function we have an array of type structure which will be traversed in search of the character that it comes with is equal to any that is in the array, if this happens the function will call the function corresponding to the character.
 
-```
+``` 
 print_t  print_type[] = {
 		{'c', print_c},
 		{'s', print_s},
