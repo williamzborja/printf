@@ -49,6 +49,11 @@ This function is the insert to go through the string format character by charact
 ```
 int format_is_correct(char format, char type)
 ```
+This function validate if format is correct
+
+```
+int get_function(char type, int *i, int *count, va_list lista)
+```
 where we have an array of type structure which will be traversed in search of the character that it comes with is equal to any that is in the array, if this happens the function will call the function corresponding to the character.
 
 ```
@@ -69,12 +74,6 @@ but if it does not find equality, it will return NULL.
 ```
 	gcc -g -Wall -Werror --pedantic <...files> -o <output-file>
 	./<output-file>
-```
-
-## Test
-
-```
-	./test.sh
 ```
 
 ## Files
