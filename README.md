@@ -11,21 +11,21 @@ Many programming languages implement a function printf (print formatted), to dis
 ```
 int printf(const char* format,...)
 ```
-where the string format provides a description of the output string according to the different variables and their writing formats.
+Where the string format provides a description of the output string according to the different variables and their writing formats.
 for Example: 
 
 ```
-printf("%2d",   1234);
+printf("%2d",  1234);
 ```
 - where format is "%2d"
-- number to print 1234   
+- number to print 1234
 
 ## Project requirements
 
 A summary of our requirements are:
-- use of programming language c
-- use of Betty style, which is a way in which holberton teaches us to follow certain requirements, which in professional life are necessary as the use of comments and tabs.
-- all the prototypes of the functions that we will create will be included in the header called holberton.h
+- Use of programming language c
+- Use of Betty style, which is a way in which holberton teaches us to follow certain requirements, which in professional life are necessary as the use of comments and tabs.
+- All the prototypes of the functions that we will create will be included in the header called holberton.h
 - Teamwork, use of a repository on github with collaborators, where they must make a balanced amount of commits.
 
 ## Project execution guide
@@ -113,7 +113,7 @@ but if it does not find equality, it will return NULL.
 
 ## Files
 
-Files|Description  
+Files|Description
 --|--
 [_printf.c](._printf.c) | Printf Function
 [_putchar.c](._putchar.c)| Write Function
