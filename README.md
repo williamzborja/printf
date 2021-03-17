@@ -18,7 +18,7 @@ for Example:
 printf("%2d",   1234);
 ```
 - where format is "%2d"
-- number to print 1234
+- number to print 1234   
 
 ## Project requirements
 
