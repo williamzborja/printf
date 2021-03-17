@@ -15,7 +15,7 @@ Where the string format provides a description of the output string according to
 for Example: 
 
 ```
-printf("%2d",  1234);
+printf("%2d", 1234);
 ```
 - Where format is "%2d"
 - Number to print 1234
