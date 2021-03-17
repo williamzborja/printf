@@ -109,7 +109,7 @@ but if it does not find equality, it will return NULL.
 **ROT13**
 * Specifier: `%R`
 * Input:  `_printf("%R\n", "is a simple letter substitution cipher");`
-* Output: `vf n fvzcyr yrggre fhofgvghgvba pvcure` 
+* Output: `vf n fvzcyr yrggre fhofgvghgvba pvcure`
 
 ## Files
 
