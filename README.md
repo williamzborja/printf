@@ -2,7 +2,7 @@
 
 # Printf
 
-The objective of this project is to gather concepts learned to date and unify them in several tasks to achieve a step-by-step replica of the printf function..
+The objective of this project is to gather concepts learned to date and unify them in several tasks to achieve a step-by-step replica of the printf function.
 
 ## Printf function
 
