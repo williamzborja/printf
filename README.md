@@ -47,7 +47,7 @@ This function is the insert to go through the string format character by charact
 - Whenever it finds '%', it has two options, if the next character is another '%' it takes it as a character and prints; but if it finds something different it will enter the next function with the character:
 
 ```
-int (*get_format(char s))(va_list)
+int format_is_correct(char format, char type)
 ```
 where we have an array of type structure which will be traversed in search of the character that it comes with is equal to any that is in the array, if this happens the function will call the function corresponding to the character.
 
