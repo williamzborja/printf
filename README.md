@@ -75,6 +75,41 @@ but if it does not find equality, it will return NULL.
 	gcc -g -Wall -Werror --pedantic <...files> -o <output-file>
 	./<output-file>
 ```
+### Usage
+**String**
+* Specifier: `%s`
+* Input:  _printf("I am a %s.\n", "string");`
+* Output: `I am a string`
+
+**Character**
+* Specifier: `%c`
+* Input:  `_printf("char: %c\n", 'H');`
+* Output: `char: H`
+
+**Integer**
+* Specifier: `%i`
+* Input:  `_printf("Number: %i\n", num);
+* Output: `Number: 40`
+
+**Decimal:**
+* Specifier: `%d`
+* Input:  `_printf("%d\n", 200);`
+* Output: `200`
+
+**Binary**
+* Specifier: `%b`
+* Input:  `_printf("%b\n", 98);`
+* Output: `1100010`
+
+**String Reverse**
+* Specifier: `%r`
+* Input:  `_printf("%r\n", "abcd");`
+* Output: `dcba`
+
+**ROT13**
+* Specifier: `%R`
+* Input:  `_printf("%R\n", "is a simple letter substitution cipher");`
+* Output: `vf n fvzcyr yrggre fhofgvghgvba pvcure`
 
 ## Files
 
