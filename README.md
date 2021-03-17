@@ -28,7 +28,7 @@ A summary of our requirements are:
 - all the prototypes of the functions that we will create will be included in the header called holberton.h
 - Teamwork, use of a repository on github with collaborators, where they must make a balanced amount of commits.
 
-### Project execution guide
+## Project execution guide
 
 ### holberton.h file
 
@@ -54,7 +54,7 @@ This function validate if format is correct
 ```
 int get_function(char type, int *i, int *count, va_list lista)
 ```
-where we have an array of type structure which will be traversed in search of the character that it comes with is equal to any that is in the array, if this happens the function will call the function corresponding to the character.
+This function we have an array of type structure which will be traversed in search of the character that it comes with is equal to any that is in the array, if this happens the function will call the function corresponding to the character.
 
 ```
 print_t  print_type[] = {
