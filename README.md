@@ -65,7 +65,7 @@ print_t  print_type[] = {
 ```
 but if it does not find equality, it will return NULL.
 
-## Usage
+## Compilation
 ```
 	gcc -g -Wall -Werror --pedantic <...files> -o <output-file>
 	./<output-file>
@@ -82,14 +82,15 @@ but if it does not find equality, it will return NULL.
 Files|Description
 --|--
 [_printf.c](._printf.c) | Printf Function
-[_putchar.c](._putchar.c)| Putchar with buffer 2048
-[.gitignore](.gitignore)| Ignore files in git
-[custom_espec.c](.custom_espec.c)| Custom task
+[_putchar.c](._putchar.c)| Write Function
+[custom_functions.c](.custom_espec.c)| Custom task
 [holberton.h](.holberton.h)| Header Principal
 [print_functions.c](.print_functions.c)| Different function to print by data type
-[README.md](.README.md)| this
-[test.sh](.test.sh)| test bash script
+[README.md](.README.md)| Description project
+[man_3_printf](.man_3_printf)| Manual page
 [validations.c](.validations.c)| Validations functions
+[get_function.c](.get_function.c)| Select and run function by type
+[case_spaces.c](.case_spaces.c)| Validate edge cases, spaces
 
 ### Contributors
 
