@@ -49,7 +49,7 @@ This function is the insert to go through the string format character by charact
 ```
 int format_is_correct(char format, char type)
 ```
-This function validate if format is correct
+This function validate if format is correct.
 
 ```
 int get_function(char type, int *i, int *count, va_list lista)
@@ -68,7 +68,7 @@ print_t  print_type[] = {
 		{NULL, NULL}
 	};
 ```
-but if it does not find equality, it will return NULL.
+But if it does not find equality, it will return NULL.
 
 ## Compilation
 ```
