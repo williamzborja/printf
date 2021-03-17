@@ -113,7 +113,7 @@ but if it does not find equality, it will return NULL.
 
 ## Files
 
-Files|Description
+Files|Description  
 --|--
 [_printf.c](._printf.c) | Printf Function
 [_putchar.c](._putchar.c)| Write Function
