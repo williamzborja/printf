@@ -12,9 +12,9 @@ int _printf(const char *format, ...)
 
 	buffer = malloc(BUFFER_SIZE);
 
-	if (buffer)
+	if (!buffer)
 		return (-1);
-		
+
 	va_start(lista, format);
 
 	if (format == NULL || (format[0] == PERCENT && format[1] == '\0'))
