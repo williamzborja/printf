@@ -3,6 +3,8 @@
 /**
 * print_c - Print a character
 * @a: arguments
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: lengh of expansion
 */
 int print_c(va_list a, char *buffer, int *buffer_size)
@@ -16,6 +18,8 @@ int print_c(va_list a, char *buffer, int *buffer_size)
 /**
 * print_i - Print a integer
 * @a: arguments
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: lengh of expansion
 */
 int print_i(va_list a, char *buffer, int *buffer_size)
@@ -31,6 +35,8 @@ int print_i(va_list a, char *buffer, int *buffer_size)
 /**
 * print_d - Print a integer
 * @a: arguments
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: lengh of expansion
 */
 int print_d(va_list a, char *buffer, int *buffer_size)
@@ -46,6 +52,8 @@ int print_d(va_list a, char *buffer, int *buffer_size)
 /**
 * print_s - Print a char*
 * @a: variadic argumants
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: lengh of expansion
 */
 int print_s(va_list a, char *buffer, int *buffer_size)
@@ -72,6 +80,8 @@ int print_s(va_list a, char *buffer, int *buffer_size)
 /**
 * print_number - Print a Integer *
 * @n: number to print
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: length
 */
 int print_number(int n, char *buffer, int *buffer_size)

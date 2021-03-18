@@ -3,6 +3,8 @@
 /**
 * _putchar - print to std with buffer 2048
 * @c: character to send to stdout
+* @buffer: buffer to acummulate output
+* @size: actual items in the buffer
 * Return: integer number
 */
 int _putchar(char c, char *buffer, int *size)

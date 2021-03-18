@@ -9,7 +9,7 @@
 /*  printf special chars */
 
 #define PERCENT '%'
-#define BUFFER_SIZE sizeof(char) * 1024
+#define BUFFER_SIZE (sizeof(char) * 1024)
 
 /**
 * struct lista - Short description
@@ -37,8 +37,11 @@ int format_is_correct(const char format, char type);
 int format_is_correct_spaces(char type);
 int print_number(int n, char *buffer, int *buffer_size);
 
-int get_function(char type, int *i, int *count, va_list lista, char *buffer, int *buffer_size);
-int case_spaces(int *i, const char *f, int *count, va_list lista, char *buffer, int *buffer_size);
+int get_function(
+	char type, int *i, int *count, va_list lista, char *buffer,
+	int *buffer_size);
+int case_spaces(int *i, const char *f, int *count, va_list lista,
+				char *buffer, int *buffer_size);
 
 int _is_alpha(char c);
 

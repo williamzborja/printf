@@ -4,6 +4,8 @@
 * rot13 - print binary
 *
 * @lista: va_list
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: length
 */
 int rot13(va_list lista, char *buffer, int *buffer_size)
@@ -46,6 +48,8 @@ int rot13(va_list lista, char *buffer, int *buffer_size)
 * rev_string - print binary
 *
 * @lista: va_list
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: length
 */
 int rev_string(va_list lista, char *buffer, int *buffer_size)
@@ -78,6 +82,8 @@ int rev_string(va_list lista, char *buffer, int *buffer_size)
 * print_binary - print binary
 *
 * @b: algo
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: int
 */
 int print_binary(va_list b, char *buffer, int *buffer_size)

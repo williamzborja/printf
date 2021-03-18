@@ -6,9 +6,14 @@
 * @i: int
 * @count: int
 * @lista: lista
+* @buffer: buffer to acummulate output
+* @buffer_size: actual items in the buffer
 * Return: integer
 */
-int get_function(char type, int *i, int *count, va_list lista, char *buffer, int *buffer_size)
+int get_function(
+	char type, int *i, int *count, va_list lista, char *buffer,
+	int *buffer_size
+)
 {
 	int j = 0, result = 0;
 	print_t print_type[] = {
