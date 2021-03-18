@@ -10,11 +10,18 @@ int _printf(const char *format, ...)
 	int i, count = 0, size = 0;
 	char *buffer;
 
-	if (format == NULL || (format[0] == PERCENT && format[1] == '\0'))
-		return (-1);
-
 	buffer = malloc(BUFFER_SIZE);
+
+	if (buffer)
+		return (-1);
+		
 	va_start(lista, format);
+
+	if (format == NULL || (format[0] == PERCENT && format[1] == '\0'))
+	{
+		free(buffer);
+		return (-1);
+	}
 
 	for (i = 0; format != NULL && format[i] != '\0'; i++)
 	{
