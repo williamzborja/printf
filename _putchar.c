@@ -9,10 +9,10 @@ int _putchar(char c, char *buffer, int *size)
 {
 	if (*size == BUFFER_SIZE)
 	{
-		*size = 0;
 		write(1, buffer, BUFFER_SIZE);
-		buffer[0] = '\0';
-		return (0);
+		free(buffer);
+		*size = 0;
+		buffer = malloc(BUFFER_SIZE);
 	}
 	buffer[*size] = c;
 	*size += 1;
