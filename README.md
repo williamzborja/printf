@@ -70,6 +70,10 @@ print_t  print_type[] = {
 ```
 But if it does not find equality, it will return NULL.
 
+## Flowchart
+
+<img src="./Diagrama%20_printf.png" alt="holbie" width="100%">
+
 ## Compilation
 ```
 	gcc -g -Wall -Werror --pedantic <...files> -o <output-file>

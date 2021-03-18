@@ -1,17 +1,16 @@
 #include "holberton.h"
-#include "limits.h"
 
 /**
 * print_c - Print a character
 * @a: arguments
 * Return: lengh of expansion
 */
-int print_c(va_list a)
+int print_c(va_list a, char *buffer, int *buffer_size)
 {
 	if (a == NULL)
 		return (-1);
 
-	_putchar(va_arg(a, int));
+	_putchar(va_arg(a, int), buffer, buffer_size);
 	return (1);
 }
 /**
@@ -19,7 +18,7 @@ int print_c(va_list a)
 * @a: arguments
 * Return: lengh of expansion
 */
-int print_i(va_list a)
+int print_i(va_list a, char *buffer, int *buffer_size)
 {
 	unsigned int num;
 
@@ -27,14 +26,14 @@ int print_i(va_list a)
 		return (-1);
 
 	num = va_arg(a, int);
-	return (print_number(num));
+	return (print_number(num, buffer, buffer_size));
 }
 /**
 * print_d - Print a integer
 * @a: arguments
 * Return: lengh of expansion
 */
-int print_d(va_list a)
+int print_d(va_list a, char *buffer, int *buffer_size)
 {
 	unsigned int num;
 
@@ -42,14 +41,14 @@ int print_d(va_list a)
 		return (-1);
 
 	num = va_arg(a, int);
-	return (print_number(num));
+	return (print_number(num, buffer, buffer_size));
 }
 /**
 * print_s - Print a char*
 * @a: variadic argumants
 * Return: lengh of expansion
 */
-int print_s(va_list a)
+int print_s(va_list a, char *buffer, int *buffer_size)
 {
 	int i;
 	char *string;
@@ -65,7 +64,7 @@ int print_s(va_list a)
 	}
 	for (i = 0; string[i] != '\0'; i++)
 	{
-		_putchar(string[i]);
+		_putchar(string[i], buffer, buffer_size);
 	}
 	return (i);
 }
@@ -75,14 +74,14 @@ int print_s(va_list a)
 * @n: number to print
 * Return: length
 */
-int print_number(int n)
+int print_number(int n, char *buffer, int *buffer_size)
 {
 	unsigned int tmp, tens = 1, length = 0;
 
 	if (n < 0)
 	{
 		n = -n;
-		_putchar('-');
+		_putchar('-', buffer, buffer_size);
 		length++;
 	}
 	tmp = n;
@@ -98,7 +97,7 @@ int print_number(int n)
 	tmp = n;
 	while (tens > 0)
 	{
-		_putchar('0' + tmp / tens);
+		_putchar('0' + tmp / tens, buffer, buffer_size);
 		tmp %= tens;
 		tens /= 10;
 	}

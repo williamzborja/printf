@@ -8,7 +8,7 @@
 * @lista: lista
 * Return: integer
 */
-int get_function(char type, int *i, int *count, va_list lista)
+int get_function(char type, int *i, int *count, va_list lista, char *buffer, int *buffer_size)
 {
 	int j = 0, result = 0;
 	print_t print_type[] = {
@@ -25,7 +25,7 @@ int get_function(char type, int *i, int *count, va_list lista)
 	{
 		if (type == print_type[j].type_format)
 		{
-			result = print_type[j].f(lista);
+			result = print_type[j].f(lista, buffer, buffer_size);
 			if (result == -1)
 				return (-1);
 			*count += result;
@@ -44,8 +44,6 @@ int get_function(char type, int *i, int *count, va_list lista)
 int _is_alpha(char c)
 {
 	if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')))
-	{
 		return (0);
-	}
 	return (1);
 }

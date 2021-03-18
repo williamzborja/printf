@@ -6,7 +6,7 @@
 * @lista: va_list
 * Return: length
 */
-int rot13(va_list lista)
+int rot13(va_list lista, char *buffer, int *buffer_size)
 {
 	int i;
 	int j;
@@ -25,7 +25,7 @@ int rot13(va_list lista)
 	{
 		if (!_is_alpha(s[i]))
 		{
-			_putchar(s[i]);
+			_putchar(s[i], buffer, buffer_size);
 			i++;
 			continue;
 		}
@@ -33,7 +33,7 @@ int rot13(va_list lista)
 		{
 			if (s[i] == let[j])
 			{
-				_putchar(cod[j]);
+				_putchar(cod[j], buffer, buffer_size);
 				break;
 			}
 		}
@@ -48,7 +48,7 @@ int rot13(va_list lista)
 * @lista: va_list
 * Return: length
 */
-int rev_string(va_list lista)
+int rev_string(va_list lista, char *buffer, int *buffer_size)
 {
 	int i, len;
 	char *s;
@@ -69,7 +69,7 @@ int rev_string(va_list lista)
 	}
 	for (i = len - 1; i >= 0; i--)
 	{
-		_putchar(s[i]);
+		_putchar(s[i], buffer, buffer_size);
 	}
 	return (len);
 }
@@ -80,7 +80,7 @@ int rev_string(va_list lista)
 * @b: algo
 * Return: int
 */
-int print_binary(va_list b)
+int print_binary(va_list b, char *buffer, int *buffer_size)
 {
 	unsigned int decimal, size, i, j, residuo, cociente, num[1024];
 
@@ -98,7 +98,7 @@ int print_binary(va_list b)
 
 			for (j = 0; j <= size; j++)
 			{
-				_putchar(num[size - j] + 48);
+				_putchar(num[size - j] + 48, buffer, buffer_size);
 			}
 			break;
 		}
